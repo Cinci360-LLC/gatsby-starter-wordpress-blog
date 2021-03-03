@@ -78,3 +78,18 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+{
+  resolve: "@pasdo501/gatsby-source-woocommerce",
+  options: {
+    // Base URL of WordPress site
+    api: 'https://cinci360.com/',
+    // true if using https. false otherwise.
+    https: false,
+    api_keys: {
+      consumer_key: `ck_4836c16df47ce610e865dd75990205bb5dba2292`,
+      consumer_secret: `cs_88218126d8e47247a4b83ae933a44016772a17da`,
+    },
+    // Array of strings with fields you'd like to create nodes for...
+    fields: ['products', 'products/categories', 'products/attributes'],
+  }
+},
